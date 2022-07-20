@@ -1,4 +1,8 @@
-$(function () {
+$
+/**
+ * Funcion principal, el que contendrá todo el jquery para la funcionalidad de la página web.
+ */
+(function () {
 
     window.verifyRecaptchaCallback = function (response) {
         $('input[data-recaptcha]').val(response).trigger('change')
